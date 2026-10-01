@@ -1,1 +1,2 @@
 *.bat text eol=crlf
+dvc_storage/** -text
