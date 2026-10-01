@@ -77,6 +77,7 @@ git clone https://github.com/AMAN-PRIYANSH/dvc-practice.git
 cd dvc-practice
 pip install -r requirements.txt
 dvc pull                      # gets data.txt from the storage folder
+dvc remote modify --local storage url dvc_storage   # one-time: lets DVC find the storage folder for old tags too
 dvc fetch --all-tags          # also downloads version 1 into DVC's cache
 python show_versions.py
 git checkout v1.0
